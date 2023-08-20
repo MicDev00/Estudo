@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
+    <!-- Com cabeçalho Fixo -->
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         /* Efeito zebrado */
         tbody > tr:nth-child(2n){
@@ -30,6 +32,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
         .num{
             text-align: right;
@@ -53,7 +60,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
 
@@ -175,5 +182,11 @@
             </tr>
         </tfoot>
     </table>
+    <h2>Apenas p/ ver o cabeçalho fixo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eaque necessitatibus quidem atque nesciunt minus dignissimos maiores, dolorem doloribus voluptatem nostrum accusamus minima. Fugiat, porro quae voluptates nisi praesentium ipsum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, hic! Doloremque excepturi odio aliquid officia adipisci velit porro repudiandae in laudantium officiis ullam suscipit corporis voluptas, nostrum aut possimus ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam debitis! Accusamus, laboriosam commodi. Corrupti dolores similique corporis! Fugiat architecto dignissimos sed quisquam? Possimus ut voluptates, quasi dolores ad iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione veritatis itaque incidunt nesciunt delectus saepe cupiditate aut molestias, molestiae quisquam earum dolores aliquid quas nulla suscipit ex, vero voluptatibus? Repellat!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eaque necessitatibus quidem atque nesciunt minus dignissimos maiores, dolorem doloribus voluptatem nostrum accusamus minima. Fugiat, porro quae voluptates nisi praesentium ipsum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, hic! Doloremque excepturi odio aliquid officia adipisci velit porro repudiandae in laudantium officiis ullam suscipit corporis voluptas, nostrum aut possimus ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam debitis! Accusamus, laboriosam commodi. Corrupti dolores similique corporis! Fugiat architecto dignissimos sed quisquam? Possimus ut voluptates, quasi dolores ad iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione veritatis itaque incidunt nesciunt delectus saepe cupiditate aut molestias, molestiae quisquam earum dolores aliquid quas nulla suscipit ex, vero voluptatibus? Repellat!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eaque necessitatibus quidem atque nesciunt minus dignissimos maiores, dolorem doloribus voluptatem nostrum accusamus minima. Fugiat, porro quae voluptates nisi praesentium ipsum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, hic! Doloremque excepturi odio aliquid officia adipisci velit porro repudiandae in laudantium officiis ullam suscipit corporis voluptas, nostrum aut possimus ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam debitis! Accusamus, laboriosam commodi. Corrupti dolores similique corporis! Fugiat architecto dignissimos sed quisquam? Possimus ut voluptates, quasi dolores ad iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione veritatis itaque incidunt nesciunt delectus saepe cupiditate aut molestias, molestiae quisquam earum dolores aliquid quas nulla suscipit ex, vero voluptatibus? Repellat!</p>
 </body>
 </html>
